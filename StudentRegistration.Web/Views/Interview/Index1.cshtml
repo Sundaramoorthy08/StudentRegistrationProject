@@ -1,0 +1,80 @@
+﻿@model List<Interview>
+
+
+
+<div class="container">
+<div class="row mb-4">
+	<div class="col-md-6  text-uppercase">
+		<h2>Interview Details</h2>
+	</div>
+	<div class="col-md-6 text-end">
+		<a asp-controller="Interview" asp-action="Create" class="btn btn-primary"><i class="bi bi-person-fill-add"></i> Create</a>
+
+	</div>
+</div>
+<hr />
+@if (Model.Count > 0)
+{
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>S.No</th>
+				<th>Student Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Company Name</th>
+				<th>Interview_Date</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.Sno</td>
+					<td>@item.Stu_name</td>
+					<td>@item.Stu_email</td>
+					<td>@item.Stu_phone</td>
+					<td>@item.Company_Name</td>
+					<td>@item.Interview_Date</td>
+					<td class="d-flex align-items-center justify-content-center">
+						<div class="w-75 btn-group" role="group">
+							<a asp-controller="Interview" asp-action="Details" asp-route-sno="@item.Sno"
+							   class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Details">
+								<i class="bi bi-eye"></i>
+							</a>
+
+							<a asp-controller="Interview" asp-action="Edit" asp-route-sno="@item.Sno"
+							   class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Edit">
+								<i class="bi bi-pencil-square"></i>
+							</a>
+
+
+							<a asp-controller="Interview" asp-action="Delete" asp-route-sno="@item.Sno"
+							   class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete">
+								<i class="bi bi-trash"></i>
+							</a>
+						</div>
+					</td>
+				</tr>
+			}
+
+		</tbody>
+
+
+	</table>
+}
+else
+{
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-center text-uppercase text-warning pt-4">No Records To Show</h2>
+			</div>
+
+		</div>
+
+	</div>
+
+}
+</div>

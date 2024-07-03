@@ -1,0 +1,42 @@
+﻿@model Interview
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="text-uppercase text-center">Interview Details Form</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 border-1 border">
+			<form method="post">
+				<div class="mb-3">
+					<label asp-for="@Model.Stu_name" class="form-label"></label>
+					<input asp-for="@Model.Stu_name" class="form-control" />
+				</div>
+				<div class="mb-3">
+					<label asp-for="@Model.Stu_email" class="form-label"></label>
+					<input asp-for="@Model.Stu_email" class="form-control" />
+				</div>
+				<div class="mb-3">
+					<label asp-for="@Model.Stu_phone" class="form-label"></label>
+					<input asp-for="@Model.Stu_phone" class="form-control" />
+				</div>
+				<div class="mb-3">
+					<label asp-for="@Model.Company_Name" class="form-label"></label>
+					<input asp-for="@Model.Company_Name" class="form-control" />
+				</div>
+				<div class="mb-3">
+					<label asp-for="@Model.Interview_Date" class="form-label"></label>
+					<input asp-for="@Model.Interview_Date" class="form-control" />
+				</div>
+				<div class="mb-3">
+					<a asp-controller="Interview" asp-action="Index1" class="btn btn-danger">Back</a>
+					<button type="submit" class="btn btn-success">Submit</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+
+</div>

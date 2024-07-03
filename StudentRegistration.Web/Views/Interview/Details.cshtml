@@ -1,0 +1,75 @@
+﻿
+
+@model Interview
+
+<div class="container">
+	<div class="card-header text-center text-uppercase">Interview Details</div>
+	<div class="card-body">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Id</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Sno</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Student Name</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Stu_name</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Student Email</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Stu_email</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Mobile Number</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Stu_phone</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Company Name</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Company_Name</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Interview Date</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Interview_Date</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a asp-controller="Interview" asp-action="Index1" class="btn btn-danger">Back</a>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</div>

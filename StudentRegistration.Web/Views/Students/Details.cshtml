@@ -1,0 +1,73 @@
+﻿@model Students
+
+<div class="container">
+	<div class="card-header text-center text-uppercase">Student Details</div>
+	<div class="card-body">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Id</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Id</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>First Name</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.FirstName</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Last Name</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.LastName</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Email</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Email</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>Phone No</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.Phone</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p class="card-text text-uppercase"><strong>city</strong></p>
+					</div>
+					<div class="col-md-8">
+						<p class="card-text">:@Model.city</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a asp-controller="Students" asp-action="Index" class="btn btn-danger">Back</a>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</div>
