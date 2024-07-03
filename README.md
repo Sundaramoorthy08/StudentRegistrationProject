@@ -23,5 +23,8 @@ Interview Details
 
 Output Video
 
+https://github.com/Sundaramoorthy08/StudentRegistrationProject/assets/97932132/9ea8d099-5ae8-43f9-ba84-7e024412fc18
+
+
 
 
